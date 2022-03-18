@@ -1,0 +1,112 @@
+.compatibility-back {
+  height: 444px;
+  background-color: #e7e7e7;
+  h4 {
+    font-family: Montserrat;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: bold;
+    color: #666666;
+    margin-top: 86px;
+    margin-bottom: 22px;
+  }
+  hr {
+    height: 2px;
+    margin-bottom: 31px;
+  }
+  h6 {
+    font-family: Montserrat;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #666666;
+    margin-bottom: 1px;
+  }
+}
+.os-about {
+  p {
+    font-family: "Varela Round";
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #666666;
+  }
+}
+.ios {
+  margin-bottom: 26px;
+}
+.android {
+  margin-bottom: 33px;
+  margin-left: 16px;
+}
+.compatibility-general {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.android-title {
+  margin-left: 16px;
+}
+.android-img {
+  margin-left: 16px;
+}
+@media (max-width: 1200px) {
+  .compatibility-general {
+    padding-left: 0px;
+    padding-right: 0px;
+    br {
+      display: none;
+    }
+  }
+}
+@media (max-width: 990px) {
+  .os-general {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .col-md-6 {
+      max-width: 520px;
+    }
+  }
+  .compatibility-back {
+    height: auto;
+    h6 {
+      text-align: center;
+    }
+    h4 {
+      text-align: center;
+    }
+  }
+  .android {
+    margin-left: 0px;
+  }
+  .android-title {
+    margin-left: 0px;
+  }
+  .android-img {
+    margin-left: 0px;
+    margin: 0 auto;
+  }
+  .os-about {
+    p {
+      max-width: 400px;
+      margin: 0 auto;
+      text-align: center;
+      margin-bottom: 35px;
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 35px;
+    }
+  }
+}
+@media (max-width: 420px) {
+  .os-about {
+    p {
+      max-width: 250px;
+    }
+  }
+  .android-img {
+    width: 230px;
+  }
+}

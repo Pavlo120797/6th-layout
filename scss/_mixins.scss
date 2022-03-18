@@ -1,0 +1,59 @@
+@mixin stores {
+    width: 257px;
+    height: 77px;
+    border: 3px solid #ffffff;
+    border-radius: 5px;
+    font-family: "Varela Round";
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: bold;
+    color: #ffffff;
+}
+@mixin app_store_logo {
+    margin-top: 9px;
+    margin-left: 19px;
+    margin-right: 4px;
+}
+@mixin app_store_span {
+    vertical-align: -7px;
+}
+@mixin play_store_logo {
+    margin-top: 14px;
+    margin-left: 25px;
+    margin-right: 11px;
+}
+
+@mixin play_store_span {
+    vertical-align: -7px;
+}
+@mixin slider_buttons {
+    width: 12px;
+    height: 12px;
+    border: 2px solid #ffffff;
+    background: transparent;
+    border-radius: 50%;
+    font-size: 0;
+}
+@mixin for_title {
+    font-family: Montserrat;
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: bold;
+    color: #ffffff;
+}
+@mixin under_title {
+    font-family: "Varela Round";
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+    color: #aeaeae;
+}
+
+// MOBILE/////
+
+@mixin stores-mobile {
+    font-size: 18px;
+    width: 150px;
+    height: 50px;
+    font-weight: normal;
+}

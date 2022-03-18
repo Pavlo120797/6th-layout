@@ -1,0 +1,233 @@
+.taken-title {
+    h3 {
+        @include for_title;
+        color: #f06464;
+        margin-top: 69px;
+        margin-bottom: 20px;
+        padding-left: 10px;
+    }
+    p {
+        @include under_title;
+        color: #666666;
+        white-space: nowrap;
+        overflow: hidden;
+        font-weight: bold;
+        margin-bottom: 74px;
+        padding-left: 15px;
+    }
+}
+.all-pics {
+    display: flex;
+    height: 519px;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.girl {
+    width: 464px;
+}
+.wood {
+    width: 519px;
+}
+.bridge {
+    width: 519px;
+}
+.lake {
+    width: 501px;
+}
+.picture-below {
+    .like {
+        font-family: "Varela Round";
+        font-size: 24px;
+        line-height: 27px;
+        font-weight: 400;
+        color: #f06464;
+        display: inline-block;
+        margin-left: 8px;
+    }
+    .below-span {
+        display: inline-block;
+    }
+    height: 87px;
+    background-color: #151515;
+    font-family: "Varela Round";
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: bold;
+    color: #c2c2c2;
+    display: none;
+    padding-left: 33px;
+    padding-top: 28px;
+    padding-right: 32px;
+}
+.with-like {
+    img {
+        margin-top: -5px;
+    }
+}
+
+.taken-picture {
+    .main-img {
+        width: 100%;
+        height: 519px;
+    }
+    &:hover {
+        .main-img {
+            position: relative;
+            top: -35px;
+            height: 468px;
+        }
+        .picture-below {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            top: -35px;
+        }
+    }
+}
+.first-colomn {
+    display: flex;
+}
+.second-colomn {
+    display: flex;
+}
+@media (max-width: 1940px) {
+    .all-pics {
+        display: flex;
+        height: auto;
+        justify-content: center;
+        flex-wrap: wrap;
+        .girl {
+            width: 519px;
+        }
+        .wood {
+            width: 519px;
+        }
+        .bridge {
+            width: 519px;
+        }
+        .lake {
+            width: 519px;
+        }
+        .first-colomn {
+            align-items: flex-end;
+        }
+        .second-colomn {
+            align-items: flex-end;
+        }
+        .taken-picture {
+            &:hover {
+                .main-img {
+                    top: 0px;
+                }
+                .picture-below {
+                    top: 0px;
+                }
+            }
+        }
+    }
+    .taken-title {
+        margin: auto;
+        text-align: center;
+    }
+}
+@media (max-width: 1200px) {
+    .all-pics {
+        flex-direction: column;
+        align-items: center;
+    }
+    .first-colomn {
+        flex-direction: column;
+    }
+    .second-colomn {
+        flex-direction: column;
+    }
+    .taken-picture {
+        .main-img {
+            height: auto;
+        }
+        &:hover {
+            .main-img {
+                height: auto;
+            }
+        }
+    }
+}
+@media (max-width: 770px) {
+    .picture-below {
+        height: 50px;
+        padding-top: 10px;
+        font-size: 15px;
+        .like {
+            font-size: 15px;
+        }
+    }
+    .with-like img {
+        width: 15px;
+    }
+    .all-pics {
+        .girl {
+            width: 400px;
+        }
+        .wood {
+            width: 400px;
+        }
+        .bridge {
+            width: 400px;
+        }
+        .lake {
+            width: 400px;
+        }
+    }
+}
+@media (max-width: 520px) {
+    .taken-title {
+        h3 {
+            font-size: 35px;
+        }
+        p {
+            font-size: 15px;
+            line-height: 23px;
+            white-space: normal;
+            br {
+                display: none;
+            }
+        }
+    }
+}
+@media (max-width: 436px) {
+    .all-pics {
+        .girl {
+            width: 100%;
+        }
+        .wood {
+            width: 100%;
+        }
+        .bridge {
+            width: 100%;
+        }
+        .lake {
+            width: 100%;
+        }
+    }
+    .taken-title {
+        h3 {
+            font-size: 30px;
+        }
+        p {
+            font-size: 15px;
+            line-height: 21px;
+        }
+    }
+    .taken-picture {
+        .main-img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .picture-below {
+        height: auto;
+        font-size: 13px;
+        line-height: 16px;
+    }
+}

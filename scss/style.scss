@@ -1,0 +1,48 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	}
+body,
+html {
+  overflow-x: hidden;
+}
+
+/* varela-round-regular - latin */
+@font-face {
+	font-family: 'Varela Round';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/varela-round-v17-latin-regular.eot'); /* IE9 Compat Modes */
+	src: local(''),
+		 url('../fonts/varela-round-v17-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('../fonts/varela-round-v17-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('../fonts/varela-round-v17-latin-regular.woff') format('woff'), /* Modern Browsers */
+		 url('../fonts/varela-round-v17-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+		 url('../fonts/varela-round-v17-latin-regular.svg#VarelaRound') format('svg'); /* Legacy iOS */
+  }
+  /* montserrat-regular - latin */
+@font-face {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/montserrat-v23-latin-regular.eot'); /* IE9 Compat Modes */
+	src: local(''),
+		 url('../fonts/montserrat-v23-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('../fonts/montserrat-v23-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('../fonts/montserrat-v23-latin-regular.woff') format('woff'), /* Modern Browsers */
+		 url('../fonts/montserrat-v23-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+		 url('../fonts/montserrat-v23-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+  }
+@import "_mixins";
+@import "_header";
+@import "_why_ama";
+@import "_share";
+@import "_features";
+@import "_taken_with";
+@import "_believe__me";
+@import "_compatibility";
+@import "_footer";
+
+
+
